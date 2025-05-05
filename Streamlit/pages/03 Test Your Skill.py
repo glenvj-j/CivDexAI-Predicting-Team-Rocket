@@ -4,6 +4,7 @@ import pickle
 import streamlit as st
 import requests
 from bs4 import BeautifulSoup
+import base64
 
 
 st.set_page_config(
@@ -183,9 +184,15 @@ link_badge = [
     'Streamlit/image/badges/Badge_8.png'
 ]
 
+# badges_html = ''.join([
+#     f'<div class="badge"><img src="{link_badge[i]}" class="badge-img" /></div>'
+#     if i < num_badges else f'<div class="badge">{i + 1}</div>'
+#     for i in range(8)
+# ])
+# Generate HTML to display badges or badge numbers
 badges_html = ''.join([
-    f'<div class="badge"><img src="{link_badge[i]}" class="badge-img" /></div>'
-    if i < num_badges else f'<div class="badge">{i + 1}</div>'
+    f'<div class="badge"><img src="data:image/png;base64,{open(link_badge[i], "rb").read().encode("base64")}" class="badge-img" /></div>'
+    if i < len(link_badge) else f'<div class="badge">{i + 1}</div>'
     for i in range(8)
 ])
 
