@@ -2,6 +2,10 @@
 
 ![Cover](https://github.com/user-attachments/assets/0ae5a2f9-137c-4280-b3c1-554683d45f96)
 
+> [!NOTE]
+> Dashboard : [View Tableau](https://public.tableau.com/app/profile/glen.joy2546/viz/CivDexAIPredictionTools/Dashboard?publish=yes)<br>
+> Game : [View here](https://civdexai-new.streamlit.app/)
+
 
 **Created by:** [Glen Valencius](https://github.com/glenvj-j)  
 **Inspired by:** Kotso P's dataset  
