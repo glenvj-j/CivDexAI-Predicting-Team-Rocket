@@ -7,24 +7,27 @@ st.set_page_config(
     layout="wide"
 )
 def set_background(image_path):
-    with open(image_path, "rb") as img_file:
-        encoded = base64.b64encode(img_file.read()).decode()
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("data:/image/png;base64,{encoded}");
-            background-size: cover;
-            background-position: center;
-            background-repeat: repeat;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+    if os.path.exists(image_path):
+        with open(image_path, "rb") as img_file:
+            encoded = base64.b64encode(img_file.read()).decode()
+        st.markdown(
+            f"""
+            <style>
+            .stApp {{
+                background-image: url("data:image/png;base64,{encoded}");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }}
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+    else:
+        st.warning(f"Background image not found at: {image_path}")
 
-# Call the function with your file path
-set_background("https://raw.githubusercontent.com/glenvj-j/CivDexAI-Predicting-Team-Rocket/refs/heads/main/Streamlit/image/bg.png")
+# Example use — adjust the path based on your structure
+set_background("Streamlit/image/bg.png")
 
 # with st.sidebar:
 #     st.text('Main Menu')
