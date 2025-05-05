@@ -1,4 +1,4 @@
-# 🕵️‍♂️ Pokémon Detective: Unmasking Team Rocket!
+# 🕵️‍♂️ CivDexAI : Unmasking Team Rocket!
 
 **Created by:** [Glen Valencius](https://github.com/glenvj-j)  
 **Inspired by:** Kotso P's dataset  
