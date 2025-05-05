@@ -24,7 +24,7 @@ def set_background(image_path):
     )
 
 # Call the function with your file path
-set_background("../image/bg.png")
+set_background("image/bg.png")
 
 # with st.sidebar:
 #     st.text('Main Menu')
