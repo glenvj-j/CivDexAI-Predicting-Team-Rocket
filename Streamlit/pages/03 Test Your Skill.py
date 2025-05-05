@@ -17,7 +17,7 @@ filename = '../Streamlit/Data/Prediction Model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
 
 # Load and balance the dataset
-df = pd.read_csv('../Data/dataset_game.csv')
+df = pd.read_csv('../Streamlit/Data/dataset_game.csv')
 n_samples_per_class = 50
 team_rocket_df = df[df['Team Rocket'] == True]
 civilian_df = df[df['Team Rocket'] == False]
