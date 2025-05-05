@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # Load model
-filename = '../Data/Prediction Model.sav'
+filename = '../Streamlit/Data/Prediction Model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
 
 # Load and balance the dataset
