@@ -1,5 +1,8 @@
 # 🕵️‍♂️ CivDexAI : Unmasking Team Rocket!
 
+![Cover](https://github.com/user-attachments/assets/0ae5a2f9-137c-4280-b3c1-554683d45f96)
+
+
 **Created by:** [Glen Valencius](https://github.com/glenvj-j)  
 **Inspired by:** Kotso P's dataset  
 📊 [View Dataset on Kaggle](https://www.kaggle.com/datasets/kotsop/pokmon-detective-challenge/data)
