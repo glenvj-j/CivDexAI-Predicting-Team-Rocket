@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # Load model
-filename = 'Data/Prediction_Model.sav'
+filename = 'Prediction_Model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
 
 # Load and balance the dataset
