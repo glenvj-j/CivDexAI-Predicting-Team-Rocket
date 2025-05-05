@@ -174,25 +174,19 @@ player_badge_count = balanced_df['Number of Gym Badges'].iloc[st.session_state.i
 num_badges = min(player_badge_count, 8)  # cap at 8 badges
 
 link_badge = [
-    'Streamlit/image/badges/badge_1.png',
-    'Streamlit/image/badges/badge_2.png',
-    'Streamlit/image/badges/badge_3.png',
-    'Streamlit/image/badges/badge_4.png',
-    'Streamlit/image/badges/badge_5.png',
-    'Streamlit/image/badges/badge_6.png',
-    'Streamlit/image/badges/badge_7.png',
-    'Streamlit/image/badges/Badge_8.png'
+    'https://archives.bulbagarden.net/media/upload/thumb/d/dd/Boulder_Badge.png/1200px-Boulder_Badge.png',
+    'https://archives.bulbagarden.net/media/upload/9/9c/Cascade_Badge.png',
+    'https://archives.bulbagarden.net/media/upload/a/a6/Thunder_Badge.png',
+    'https://archives.bulbagarden.net/media/upload/b/b5/Rainbow_Badge.png',
+    'https://archives.bulbagarden.net/media/upload/7/7d/Soul_Badge.png',
+    'https://archives.bulbagarden.net/media/upload/6/6b/Marsh_Badge.png',
+    'https://archives.bulbagarden.net/media/upload/1/12/Volcano_Badge.png',
+    'https://archives.bulbagarden.net/media/upload/7/78/Earth_Badge.png'
 ]
 
-# badges_html = ''.join([
-#     f'<div class="badge"><img src="{link_badge[i]}" class="badge-img" /></div>'
-#     if i < num_badges else f'<div class="badge">{i + 1}</div>'
-#     for i in range(8)
-# ])
-# Generate HTML to display badges or badge numbers
 badges_html = ''.join([
-    f'<div class="badge"><img src="data:image/png;base64,{open(link_badge[i], "rb").read().encode("base64")}" class="badge-img" /></div>'
-    if i < len(link_badge) else f'<div class="badge">{i + 1}</div>'
+    f'<div class="badge"><img src="{link_badge[i]}" class="badge-img" /></div>'
+    if i < num_badges else f'<div class="badge">{i + 1}</div>'
     for i in range(8)
 ])
 
