@@ -35,7 +35,7 @@ set_background("Streamlit/image/bg.png")
 
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
-    st.image("image/Headline.png")
+    st.image("Streamlit/image/Headline.png")
 
 st.markdown("<h1 style='text-align: center; color: white;'>Welcome!</h1>", unsafe_allow_html=True)
 st.markdown("""
