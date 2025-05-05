@@ -180,7 +180,7 @@ link_badge = [
     'Streamlit/image/badges/badge_5.png',
     'Streamlit/image/badges/badge_6.png',
     'Streamlit/image/badges/badge_7.png',
-    'Streamlit/image/badges/badge_8.png'
+    'Streamlit/image/badges/Badge_8.png'
 ]
 
 badges_html = ''.join([
