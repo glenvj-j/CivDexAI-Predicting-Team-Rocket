@@ -173,15 +173,26 @@ def image_person() :
 player_badge_count = balanced_df['Number of Gym Badges'].iloc[st.session_state.index]
 num_badges = min(player_badge_count, 8)  # cap at 8 badges
 
+# link_badge = [
+#     'https://archives.bulbagarden.net/media/upload/thumb/d/dd/Boulder_Badge.png/1200px-Boulder_Badge.png',
+#     'https://archives.bulbagarden.net/media/upload/9/9c/Cascade_Badge.png',
+#     'https://archives.bulbagarden.net/media/upload/a/a6/Thunder_Badge.png',
+#     'https://archives.bulbagarden.net/media/upload/b/b5/Rainbow_Badge.png',
+#     'https://archives.bulbagarden.net/media/upload/7/7d/Soul_Badge.png',
+#     'https://archives.bulbagarden.net/media/upload/6/6b/Marsh_Badge.png',
+#     'https://archives.bulbagarden.net/media/upload/1/12/Volcano_Badge.png',
+#     'https://archives.bulbagarden.net/media/upload/7/78/Earth_Badge.png'
+# ]
+
 link_badge = [
-    'https://archives.bulbagarden.net/media/upload/thumb/d/dd/Boulder_Badge.png/1200px-Boulder_Badge.png',
-    'https://archives.bulbagarden.net/media/upload/9/9c/Cascade_Badge.png',
-    'https://archives.bulbagarden.net/media/upload/a/a6/Thunder_Badge.png',
-    'https://archives.bulbagarden.net/media/upload/b/b5/Rainbow_Badge.png',
-    'https://archives.bulbagarden.net/media/upload/7/7d/Soul_Badge.png',
-    'https://archives.bulbagarden.net/media/upload/6/6b/Marsh_Badge.png',
-    'https://archives.bulbagarden.net/media/upload/1/12/Volcano_Badge.png',
-    'https://archives.bulbagarden.net/media/upload/7/78/Earth_Badge.png'
+    'https://raw.githubusercontent.com/glenvj-j/CivDexAI-Predicting-Team-Rocket/main/Streamlit/image/badges/badge_1.png',
+    'https://raw.githubusercontent.com/glenvj-j/CivDexAI-Predicting-Team-Rocket/main/Streamlit/image/badges/badge_2.png',
+    'https://raw.githubusercontent.com/glenvj-j/CivDexAI-Predicting-Team-Rocket/main/Streamlit/image/badges/badge_3.png',
+    'https://raw.githubusercontent.com/glenvj-j/CivDexAI-Predicting-Team-Rocket/main/Streamlit/image/badges/badge_4.png',
+    'https://raw.githubusercontent.com/glenvj-j/CivDexAI-Predicting-Team-Rocket/main/Streamlit/image/badges/badge_5.png',
+    'https://raw.githubusercontent.com/glenvj-j/CivDexAI-Predicting-Team-Rocket/main/Streamlit/image/badges/badge_6.png',
+    'https://raw.githubusercontent.com/glenvj-j/CivDexAI-Predicting-Team-Rocket/main/Streamlit/image/badges/badge_7.png',
+    'https://raw.githubusercontent.com/glenvj-j/CivDexAI-Predicting-Team-Rocket/main/Streamlit/image/badges/Badge_8.png',
 ]
 
 badges_html = ''.join([
